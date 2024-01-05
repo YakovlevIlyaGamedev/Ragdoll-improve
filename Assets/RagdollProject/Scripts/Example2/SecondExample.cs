@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,12 +12,5 @@ public class SecondExample : MonoBehaviour
             enemy.Initialize();
             enemy.StartRun();
         }
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.F))
-            foreach (Enemy enemy in _enemies)
-                enemy.Kill();
     }
 }

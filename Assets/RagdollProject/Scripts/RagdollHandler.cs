@@ -16,7 +16,7 @@ public class RagdollHandler : MonoBehaviour
     {
         Rigidbody injuredRigidbody = _rigidbodies.OrderBy(rigidbody => Vector3.Distance(rigidbody.position, hitPosition)).First();
 
-        injuredRigidbody.AddForce(force, ForceMode.Impulse);
+        injuredRigidbody.AddForceAtPosition(force, hitPosition, ForceMode.Impulse);
     }
 
     public void Enable()
