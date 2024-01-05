@@ -7,7 +7,7 @@ public class EnemyView : MonoBehaviour
 
     private Animator _animator;
 
-    private void Awake() => _animator = GetComponent<Animator>();
+    public void Initialize() => _animator = GetComponent<Animator>();
 
     public void StartRunning() => _animator.SetBool(IsRunningKey, true);
     public void StopRunning() => _animator.SetBool(IsRunningKey, false);
