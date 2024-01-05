@@ -10,13 +10,18 @@ public class Enemy : MonoBehaviour
     {
         _view.Initialize();
         _ragdollHandler.Initialize();
-        _mover.Enable();
+    }
+
+    public void StartRun()
+    {
         _view.StartRunning();
+        _mover.Enable();
     }
 
     public void Kill()
     {
         _view.DisableAnimator();
+        _mover.Disable();
         _ragdollHandler.Enable();
     }
 }
