@@ -657,7 +657,7 @@ CharacterJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -0.0046964264, y: -0.00009781122, z: 0.00006266782}
   serializedVersion: 2
-  m_SwingAxis: {x: 0.000055412536, y: -0.016181782, z: 0.999869}
+  m_SwingAxis: {x: 0.000055412645, y: -0.01618178, z: 0.999869}
   m_TwistLimitSpring:
     spring: 0
     damper: 0
@@ -666,7 +666,7 @@ CharacterJoint:
     bounciness: 0
     contactDistance: 0
   m_HighTwistLimit:
-    limit: 110
+    limit: 90
     bounciness: 0
     contactDistance: 0
   m_SwingLimitSpring:
@@ -855,11 +855,11 @@ CharacterJoint:
   m_ConnectedBody: {fileID: 114103353}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
-  m_Axis: {x: -0.9986988, y: -0.050989043, z: -0.00088054937}
+  m_Axis: {x: -0.9986988, y: -0.050989043, z: -0.0008805494}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0.0046964264, y: -0.00009781122, z: 0.00006266782}
   serializedVersion: 2
-  m_SwingAxis: {x: -0.00005541254, y: -0.016181782, z: 0.999869}
+  m_SwingAxis: {x: -0.00005541265, y: -0.01618178, z: 0.999869}
   m_TwistLimitSpring:
     spring: 0
     damper: 0
@@ -868,7 +868,7 @@ CharacterJoint:
     bounciness: 0
     contactDistance: 0
   m_HighTwistLimit:
-    limit: 110
+    limit: 90
     bounciness: 0
     contactDistance: 0
   m_SwingLimitSpring:
@@ -1078,7 +1078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!136 &832850745
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1359,7 +1359,7 @@ CharacterJoint:
     bounciness: 0
     contactDistance: 0
   m_Swing2Limit:
-    limit: 20
+    limit: 15
     bounciness: 0
     contactDistance: 0
   m_EnableProjection: 1
@@ -1663,7 +1663,7 @@ CharacterJoint:
     bounciness: 0
     contactDistance: 0
   m_Swing2Limit:
-    limit: 20
+    limit: 15
     bounciness: 0
     contactDistance: 0
   m_EnableProjection: 1
