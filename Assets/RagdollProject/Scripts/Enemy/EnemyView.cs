@@ -11,4 +11,7 @@ public class EnemyView : MonoBehaviour
 
     public void StartRunning() => _animator.SetBool(IsRunningKey, true);
     public void StopRunning() => _animator.SetBool(IsRunningKey, false);
+
+    public void DisableAnimator() => _animator.enabled = false;
+    public void EnableAnimator() => _animator.enabled = true;
 }
