@@ -8,4 +8,10 @@ public class ThirdExample : MonoBehaviour
     {
         _enemy.Initialize();
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.F))
+            _enemy.StandUp();
+    }
 }

@@ -34,10 +34,21 @@ public class Enemy : MonoBehaviour, IDamageable
         _ragdollHandler.Hit(force, hitPoint);
     }
 
+    public void StandUp()
+    {
+        DisableRagdollBehaviour();
+    }
+
     private void EnableRagdollBehaviour()
     {
         _view.DisableAnimator();
         _mover.Disable();
         _ragdollHandler.Enable();
+    }
+
+    private void DisableRagdollBehaviour()
+    {
+        _view.EnableAnimator();
+        _ragdollHandler.Disable();
     }
 }
