@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour, IDamageable
     public void Initialize()
     {
         _view.Initialize();
-        _ragdollHandler.Initialize();
+        _ragdollHandler.Initialize(transform, _view.GetBone(HumanBodyBones.Spine));
     }
 
     public void StartRun()
@@ -36,6 +36,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void StandUp()
     {
+        _ragdollHandler.AdjustParentTransformToRagdoll();
         DisableRagdollBehaviour();
     }
 

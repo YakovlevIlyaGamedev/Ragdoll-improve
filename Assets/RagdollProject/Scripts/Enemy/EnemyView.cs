@@ -14,4 +14,6 @@ public class EnemyView : MonoBehaviour
 
     public void DisableAnimator() => _animator.enabled = false;
     public void EnableAnimator() => _animator.enabled = true;
+
+    public Transform GetBone(HumanBodyBones bone) => _animator.GetBoneTransform(bone);
 }
