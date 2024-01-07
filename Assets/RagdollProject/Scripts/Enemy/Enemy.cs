@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour, IDamageable
@@ -8,8 +9,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void Initialize()
     {
-        _view.Initialize();
-        _ragdollHandler.Initialize(transform, _view.GetBone(HumanBodyBones.Spine));
+        _view.Initialize(transform);
+        _ragdollHandler.Initialize(transform);
     }
 
     public void StartRun()
@@ -36,8 +37,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void StandUp()
     {
-        _ragdollHandler.AdjustParentTransformToRagdoll();
-        DisableRagdollBehaviour();
+        _ragdollHandler.Disable();
+        _view.PlayStandingUp(_view.EnableAnimator, _view.StartIdling);
     }
 
     private void EnableRagdollBehaviour()
@@ -45,11 +46,5 @@ public class Enemy : MonoBehaviour, IDamageable
         _view.DisableAnimator();
         _mover.Disable();
         _ragdollHandler.Enable();
-    }
-
-    private void DisableRagdollBehaviour()
-    {
-        _view.EnableAnimator();
-        _ragdollHandler.Disable();
     }
 }

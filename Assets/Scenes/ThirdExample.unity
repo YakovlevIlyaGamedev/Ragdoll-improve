@@ -209,13 +209,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
+  m_LocalRotation: {x: 0.27463055, y: 0, z: 0, w: 0.9615499}
   m_LocalPosition: {x: 0, y: 4.17, z: -11.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.88, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,11 +398,36 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2348344510732167391, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: m_SwingAxis.x
+      value: 0.000055412645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348344510732167391, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: m_SwingAxis.y
+      value: -0.01618178
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348344510732167391, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: m_HighTwistLimit.limit
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 3024976917810911399, guid: 71d516c3d75620741b1fff8e87702986,
         type: 3}
       propertyPath: m_Name
       value: RagdollEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3180909497792730692, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: _backStandingUpClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 061db0db18c7eae4c986da6786f650b9, type: 2}
+    - target: {fileID: 3180909497792730692, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: _frontStandingUpClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 73b17928a39b64445b07f8bb5368daec, type: 2}
     - target: {fileID: 3405277772351034361, guid: 71d516c3d75620741b1fff8e87702986,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -416,7 +441,7 @@ PrefabInstance:
     - target: {fileID: 3405277772351034361, guid: 71d516c3d75620741b1fff8e87702986,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.84
+      value: 1.723
       objectReference: {fileID: 0}
     - target: {fileID: 3405277772351034361, guid: 71d516c3d75620741b1fff8e87702986,
         type: 3}
@@ -452,6 +477,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3701199149340253086, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: _backStandingUpClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 061db0db18c7eae4c986da6786f650b9, type: 2}
+    - target: {fileID: 3701199149340253086, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: _frontStandingUpClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 73b17928a39b64445b07f8bb5368daec, type: 2}
+    - target: {fileID: 4499736653639789722, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: m_Axis.z
+      value: -0.0008805494
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499736653639789722, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: m_SwingAxis.x
+      value: -0.00005541265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499736653639789722, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: m_SwingAxis.y
+      value: -0.01618178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499736653639789722, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: m_HighTwistLimit.limit
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542802041272489043, guid: 71d516c3d75620741b1fff8e87702986,
+        type: 3}
+      propertyPath: m_HighTwistLimit.limit
+      value: -10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
